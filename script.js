@@ -87,7 +87,7 @@
     
       fetch("/"+name+"2.txt")
       .then( response => response.text() )
-      .then( text => player.processNotes(text) )
+      .then( text => player.processN tes(text) )
 
   }
   player.processNotes = function(data){
