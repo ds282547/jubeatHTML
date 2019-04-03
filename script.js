@@ -79,7 +79,7 @@
   player.loadSong = function(name){
       //load music
       player.songName = name;
-      player.audio = new Audio(name+".ogg");
+      player.audio = new Audio(name+".mp3");
       //load notes
       player.audio.oncanplay = function(){
           console.log("["+player.songName+"] Music Loaded");
