@@ -87,7 +87,7 @@
     
       fetch("/"+name+"2.txt")
       .then( response => response.text() )
-      .then( text => player.processN tes(text) )
+      .then( text => player.processNotes(text) )
 
   }
   player.processNotes = function(data){
@@ -282,7 +282,7 @@
       this.showingNextNoteTime = this.noteQueue[0].prepareTime;
   }
   player.playSong = function(){
-      //this.audio.playbackRate = 0.8;
+      this.audio.playbackRate = 0.8;
       this.audio.play();
       this.startStep();
       console.log("?");
