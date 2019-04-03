@@ -4,7 +4,7 @@
   window.requestAnimationFrame = requestAnimationFrame;
   })();
 
-  var boxsize = 100;
+  var boxsize = 180;
   var dis = 10;
   var border = boxsize * 4 + dis * 5;
   var canvas = document.createElement("canvas");
@@ -282,7 +282,7 @@
       this.showingNextNoteTime = this.noteQueue[0].prepareTime;
   }
   player.playSong = function(){
-      this.audio.playbackRate = 0.8;
+      this.audio.playbackRate = 0.6;
       this.audio.play();
       this.startStep();
       console.log("?");
