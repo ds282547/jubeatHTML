@@ -84,13 +84,15 @@
       player.audio.oncanplay = function(){
           console.log("["+player.songName+"] Music Loaded");
       }
-
-      fetch(name+"2.txt")
+    
+      fetch("/"+name+"2.txt")
       .then( response => response.text() )
       .then( text => player.processNotes(text) )
 
   }
   player.processNotes = function(data){
+      console.log(data);
+
       bardatas = data.split("\r\n\r\n");
 
       var barnotes;
